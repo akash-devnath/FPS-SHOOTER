@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class EnemyHealth : MonoBehaviour
+{
+    int startingHealth = 3;
+    int currentHealth;
+    private void Awake()
+    {
+        currentHealth = startingHealth;
+    }
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        if(currentHealth <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+}
