@@ -16,4 +16,6 @@ MonoBehaviour:
   Damage: 2
   FireRate: 0.5
   FireRange: 50
+  WeaponPrefab: {fileID: 1722940558358286261, guid: ce0a6101c3d473b4298b0b6524a393ca, type: 3}
   HitVFXPrefab: {fileID: 5971546282767466435, guid: fa43842178db07c4c938f363f35d3233, type: 3}
+  IsAutomatic: 0

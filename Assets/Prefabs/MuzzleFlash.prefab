@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8462052739275657913}
   - component: {fileID: 2459178005709849294}
   - component: {fileID: 7109839238381490088}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MuzzleFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -733,7 +733,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.2
+      value: 0.3
       mode: 0
       spread: 0
       speed:
