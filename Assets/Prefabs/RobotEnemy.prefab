@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2324496216007344838}
   - component: {fileID: 5428782662531886103}
   - component: {fileID: 1165811071111055739}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RobotEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2703268355521516300}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,6 +213,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8ee6b4e96d25e3e4f9f31ed5e2666cdb, type: 3}
       propertyPath: m_Name
       value: HoveringRobot02
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8ee6b4e96d25e3e4f9f31ed5e2666cdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
