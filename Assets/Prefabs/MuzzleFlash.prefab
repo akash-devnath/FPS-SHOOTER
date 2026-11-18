@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8462052739275657913}
   - component: {fileID: 2459178005709849294}
   - component: {fileID: 7109839238381490088}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: MuzzleFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3268647968688065077}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.231, y: 0.071, z: -0.008}
+  m_LocalPosition: {x: -0.231, y: 0.19, z: -0.008}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5899685727713119576}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,8 +41,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8583003878471232987}
-  - component: {fileID: 6359357932951339285}
-  m_Layer: 3
+  - component: {fileID: -6664619735527582873}
+  m_Layer: 7
   m_Name: MachineGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,11 +62,11 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2297233482973196008}
   - {fileID: 5899685727713119576}
-  - {fileID: 1977342352680035408}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -0.569, y: 76.681, z: -7.416}
---- !u!114 &6359357932951339285
+--- !u!114 &-6664619735527582873
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,6 +79,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weapons
   muzzleFlash: {fileID: 2459178005709849294, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &5823322919782920037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heavy_machine_gun_01_Blue_Team
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8c5e5625b7bd884899700bf60088473, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -141,7 +148,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8c5e5625b7bd884899700bf60088473, type: 3}
   m_PrefabInstance: {fileID: 5823322919782920037}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &7935252681335092969
+--- !u!1001 &7678120111519415377
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -155,19 +162,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3268647968688065077, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.639
+      value: -0.6484
       objectReference: {fileID: 0}
     - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.089
+      value: 0.0926
       objectReference: {fileID: 0}
     - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.001
+      value: -0.0169
       objectReference: {fileID: 0}
     - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_LocalRotation.w
@@ -202,8 +209,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
---- !u!4 &1977342352680035408 stripped
+--- !u!4 &2297233482973196008 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-  m_PrefabInstance: {fileID: 7935252681335092969}
+  m_PrefabInstance: {fileID: 7678120111519415377}
   m_PrefabAsset: {fileID: 0}

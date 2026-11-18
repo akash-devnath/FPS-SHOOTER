@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 426322202234165321}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,8 +41,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2533707637549971658}
-  - component: {fileID: 897772655966376964}
-  m_Layer: 3
+  - component: {fileID: -426224078273693102}
+  m_Layer: 7
   m_Name: Sniper Riffle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,7 +66,7 @@ Transform:
   - {fileID: 5712133627557179713}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -0.407, y: 77.922, z: -6.647}
---- !u!114 &897772655966376964
+--- !u!114 &-426224078273693102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,6 +79,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weapons
   muzzleFlash: {fileID: 2459178005709849294, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &4191394833148830712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93,19 +96,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3268647968688065077, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.639
+      value: -0.843
       objectReference: {fileID: 0}
     - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.089
+      value: 0.079
       objectReference: {fileID: 0}
     - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.001
+      value: -0.005
       objectReference: {fileID: 0}
     - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_LocalRotation.w
@@ -196,6 +199,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 860f35edef6dcfe40b58b14593dfeafb, type: 3}
       propertyPath: m_Name
       value: Sniper_01_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 860f35edef6dcfe40b58b14593dfeafb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

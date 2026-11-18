@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSO
   WeaponName: Machine Gun
   Damage: 1
-  FireRate: 0.3
-  FireRange: 50
+  FireRate: 0.2
+  FireRange: 100
+  MagazineSize: 50
   WeaponPrefab: {fileID: 4027436809664205792, guid: 5f012ecbf6485ab40b0273114c516692, type: 3}
   HitVFXPrefab: {fileID: 5971546282767466435, guid: fa43842178db07c4c938f363f35d3233, type: 3}
   IsAutomatic: 1
+  CanZoom: 0
+  ZoomAmount: 10
+  RotationSpeed: 0.3

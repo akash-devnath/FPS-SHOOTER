@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6274004328227467662}
-  - component: {fileID: 8668782113869372736}
-  m_Layer: 3
+  - component: {fileID: -696838171732831508}
+  m_Layer: 7
   m_Name: Pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 8201809009579741453}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -0.569, y: 76.681, z: -4.612}
---- !u!114 &8668782113869372736
+--- !u!114 &-696838171732831508
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,7 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae21157dce1477c4cb1e7dfbd549780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weapons
-  muzzleFlash: {fileID: 7796335854706403442}
+  muzzleFlash: {fileID: 2459178005709849294, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &4468802810661751945
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +59,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8201809009579741453}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9d91fae2703d43046a1c37804ae23dad, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -153,9 +156,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6274004328227467662}
     m_Modifications:
+    - target: {fileID: 2459178005709849294, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459178005709849294, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3268647968688065077, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_Name
       value: MuzzleFlash
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268647968688065077, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
       propertyPath: m_LocalPosition.x
@@ -205,10 +220,5 @@ PrefabInstance:
 --- !u!4 &4286766430541920261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-  m_PrefabInstance: {fileID: 5625813399412714172}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &7796335854706403442 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2459178005709849294, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
   m_PrefabInstance: {fileID: 5625813399412714172}
   m_PrefabAsset: {fileID: 0}
