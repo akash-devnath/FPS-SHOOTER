@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSO
   WeaponName: Pistol
   Damage: 2
-  FireRate: 0.5
+  FireRate: 0.3
   FireRange: 50
   MagazineSize: 12
   WeaponPrefab: {fileID: 1722940558358286261, guid: ce0a6101c3d473b4298b0b6524a393ca, type: 3}

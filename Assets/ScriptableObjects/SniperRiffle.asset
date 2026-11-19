@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SniperRiffle
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSO
   WeaponName: Sniper Riffle
-  Damage: 5
-  FireRate: 1
+  Damage: 7
+  FireRate: 0.5
   FireRange: 200
   MagazineSize: 8
   WeaponPrefab: {fileID: 7192575508789446385, guid: cb18fa6799404fc4e9700de030465ba7, type: 3}

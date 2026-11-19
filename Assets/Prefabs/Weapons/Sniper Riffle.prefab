@@ -42,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2533707637549971658}
   - component: {fileID: -426224078273693102}
+  - component: {fileID: 5949858498095226625}
   m_Layer: 7
   m_Name: Sniper Riffle
   m_TagString: Untagged
@@ -63,7 +64,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 426322202234165321}
-  - {fileID: 5712133627557179713}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -0.407, y: 77.922, z: -6.647}
 --- !u!114 &-426224078273693102
@@ -78,76 +78,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae21157dce1477c4cb1e7dfbd549780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weapons
-  muzzleFlash: {fileID: 2459178005709849294, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
   interactLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
---- !u!1001 &4191394833148830712
-PrefabInstance:
+    m_Bits: 255
+--- !u!114 &5949858498095226625
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2533707637549971658}
-    m_Modifications:
-    - target: {fileID: 3268647968688065077, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_Name
-      value: MuzzleFlash
-      objectReference: {fileID: 0}
-    - target: {fileID: 3268647968688065077, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.843
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.079
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.005
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
---- !u!4 &5712133627557179713 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8462052739275657913, guid: 4230835437c9c6e4ab154984948a8363, type: 3}
-  m_PrefabInstance: {fileID: 4191394833148830712}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7192575508789446385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineImpulseSource
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 2
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0, y: -1, z: 0}
 --- !u!1001 &8064179068656473276
 PrefabInstance:
   m_ObjectHideFlags: 0
