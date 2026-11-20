@@ -57,6 +57,8 @@ The game features basic enemy navigation, projectile-based attacks, self-destruc
 <!-- Add your gameplay screenshot below -->
 
 ![Gameplay](Screenshots/shot1.png)
+![Gameplay](Screenshots/shot2.png)
+![Gameplay](Screenshots/shot4.png)
 
 ### 6. Game End Screens
 
